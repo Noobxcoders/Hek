@@ -4,8 +4,8 @@ from os import getenv
 from dotenv import load_dotenv
 from pyrogram import filters
 
-if os.path.exists("Internal"):
-   load_dotenv("Internal")
+if os.path.exists("local.env"):
+   load_dotenv("local.env")
 
 aiohttpsession = aiohttp.ClientSession()
 que = {}
